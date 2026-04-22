@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gawla</title>
+    <!-- Tailwind -->
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- ///////////////// -->
+     <!-- Owl -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <!-- //////////////////////////////// -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="photos/logo.png">
+</head>
+<body>
+    <button class="position-fixed bottom-0 end-0  border-0 translate-middle scroll-to-top text-white rounded-3 p-2" id="up">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+    <!-- <nav class="main-bg sticky-top">
+<div class="container py-1 ">
+
+  <div class="row align-items-center  sticky-on-scroll  z-5 main-bg ">
+    
+ /////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- <div class="col-3  d-flex align-items-center ">
+<button class="btn d-none justify-items-center list w-auto  d-flex justify-content-start" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+<i class="bi bi-list"></i>
+</button>
+</div>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasExampleLabel">Start Your Journey</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+         <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">cart 🛒</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">        <ul class="list-unstyled">
+            <li class="nav-item">
+            <a href="#" class="nav-link  nav-opptions ther-color">Home</a>
+            </li>
+            <li class="nav-item">
+            <a href="#" class="nav-link  nav-opptions ther-color">Explore</a>
+            </li>
+            <li class="nav-item">
+            <a href="#" class="nav-link  nav-opptions ther-color">Packages</a>
+            </li>
+            <li class="nav-item">
+            <a href="#" class="nav-link  nav-opptions ther-color">Offers</a>
+            </li>
+        </ul>
+    </div>
+  <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+                   <div class="offcanvas-body text-center">
+            Your cart is empty 🛒
+        </div>
+        </div>
+
+        </div></div>
+</div>
+
+        
+  
+ /////////////////////////////////////////////////////////////////////////////////////// -->
+<!-- 
+        Logo 
+<div class="col-3  text-center col-lg-1 d-flex flex-start align-items-center ">
+    <a href="#">
+        <img src="photos/logo.png" class="img-fluid" style="max-width:120px;">
+    </a>
+</div>
+
+         Nav 
+        <div class="col-4 col-lg-5 text-center text-lg-start">
+        <ul class="nav justify-content-center  menu">
+            <li class="nav-item">
+            <a href="#" class="nav-link  nav-opptions ther-color">Home</a>
+            </li>
+            <li class="nav-item">
+            <a href="#" class="nav-link  nav-opptions ther-color">Explore</a>
+            </li>
+            <li class="nav-item">
+            <a href="#" class="nav-link  nav-opptions ther-color">Packages</a>
+            </li>
+            <li class="nav-item">
+            <a href="#" class="nav-link  nav-opptions ther-color">Offers</a>
+            </li>
+        </ul>
+        </div>
+
+         Buttons 
+        <div class="col-4 col-lg-3 d-flex justify-content-end align-items-center">
+            
+            <button class="ther-color p-1 rounded-3 btn-ther">Login</button>
+            <button class=" ther-bg text-white mx-2 p-1 rounded-3 ">Sign Up</button>
+
+            <button class="btn rounded-circle cart sec-color d-flex align-items-center justify-content-center" style="width:40px; height:40px;" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="photos/card.png" class="w-100"></button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title">Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body text-center">
+            Your cart is empty 🛒
+        </div>
+        </div>
+         </div>
+        </div>
+        </div>
+        
+
+
+</div>
+</nav> --> 
+<nav class="main-bg sticky-top">
+  <div class="container">
+
+    <!-- Top Navbar -->
+    <div class="row align-items-center py-2 g-2">
+
+      <!-- Mobile Menu Button -->
+      <div class="col-2 d-lg-none text-start">
+
+        <button class="navbar-toggler ther-color border-0 shadow-none p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileMenu">
+
+          <i class="bi bi-list fs-2"></i>
+
+        </button>
+
+      </div>
+
+      <!-- Logo -->
+      <div class="col-5 col-lg-2 text-center text-lg-start">
+
+        <a href="#">
+          <img src="photos/logo croped.png"
+            class="img-fluid"
+            style="max-width:70px;">
+        </a>
+
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="col d-none d-lg-flex justify-content-center">
+
+        <ul class="nav m-2">
+
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-opptions ther-color">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-opptions ther-color">
+              Explore
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-opptions ther-color">
+              Packages
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-opptions ther-color">
+              Offers
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-5 col-lg-3 d-flex justify-content-end align-items-center gap-1 flex-nowrap">
+
+        <a href="../login"
+          class="text-decoration-none ther-color rounded-3 btn-ther px-2 py-1 small">
+          Login
+        </a>
+
+        <a href="../login/signup.html"
+          class="text-decoration-none ther-bg text-white rounded-3 px-2 py-1 me-1 small">
+          SignUp
+        </a>
+
+        <button
+          class="btn rounded-circle d-flex align-items-center justify-content-center color-big p-2"
+          style="width:38px; height:38px; flex-shrink:0;">
+
+          <img src="photos/card.png" class="w-100">
+
+        </button>
+
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="collapse d-lg-none pb-3" id="mobileMenu">
+
+      <ul class="nav flex-column ">
+
+        <li class="nav-item">
+          <a href="#" class="nav-link nav-opptions ther-color">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link nav-opptions ther-color">
+            Explore
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link nav-opptions ther-color">
+            Packages
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link nav-opptions ther-color">
+            Offers
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

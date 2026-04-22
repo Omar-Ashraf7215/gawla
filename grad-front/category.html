@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gawla</title>
+    <!-- Tailwind -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- ///////////////// -->
+     <!-- Owl -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <!-- //////////////////////////////// -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="photos/logo.png">
+</head>
+<body>
+    <button class="position-fixed bottom-0 end-0  border-0 translate-middle scroll-to-top text-white rounded-3 p-2" id="up">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+<nav class="main-bg sticky-top">
+  <div class=" px-2">
+
+    <!-- Top Navbar -->
+    <div class="row align-items-center py-2 g-2">
+
+      <!-- Mobile Menu Button -->
+      <div class="col-2 d-lg-none text-start">
+
+        <button class="navbar-toggler ther-color border-0 shadow-none p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileMenu">
+
+          <i class="bi bi-list fs-2"></i>
+
+        </button>
+
+      </div>
+
+      <!-- Logo -->
+      <div class="col-5 col-lg-2 text-center text-lg-start">
+
+        <a href="#">
+          <img src="photos/logo croped.png"
+            class="img-fluid"
+            style="max-width:70px;">
+        </a>
+
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="col d-none d-lg-flex justify-content-center">
+
+        <ul class="nav m-2">
+
+          <li class="nav-item">
+            <a href="home.html" class="nav-link nav-opptions ther-color">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="category.html" class="nav-link nav-opptions ther-color">
+              Category
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-opptions ther-color">
+              Hidden Gems
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-opptions ther-color">
+              Offers
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-4 col-lg-3 d-flex justify-content-end align-items-center gap-1 flex-nowrap">
+
+
+        <button class="btn rounded-circle d-flex align-items-center justify-content-center color-big "
+          style="width:40px; height:40px;">
+          <i class="bi bi-person"></i>
+        </button>
+
+        <a href="../booking/index.html"
+          class=" rounded-circle d-flex align-items-center justify-content-center color-big p-2"
+          style="width:38px; height:38px; flex-shrink:0;">
+
+          <img src="photos/card.png" class="w-100">
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="collapse d-lg-none pb-3" id="mobileMenu">
+
+      <ul class="nav flex-column ">
+
+        <li class="nav-item">
+          <a href="../grad-front/home.html" class="nav-link nav-opptions ther-color">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="../grad-front/category.html" class="nav-link nav-opptions ther-color">
+            Category
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link nav-opptions ther-color">
+            Hidden Gems
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link nav-opptions ther-color">
+            Offers
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+    <!-- Panner -->
+        <div class="panner1 d-flex justify-content-center align-items-center ">
+            <div class="">
+                <h1 class="text-white fs-1 text-nav  text-center">Explore Egypt Like Never Before</h1>
+                <p class="text-white fs-3 text-nav ">Discover hidden gems,book trips, and enjoy your journey</p>
+                
+            <div class="d-flex align-items-center main-bg p-1 my-3 rounded-5 search-box ">
+
+                <img src="photos/search.png" width="20" class="mx-2">
+
+                <input type="text"
+                    class="border-0 main-bg flex-grow-1" placeholder="where do you want to go?">
+
+                <button class="scroll-to-top rounded-5 border-0 px-3 py-2 text-white ms-2  text-nav ">
+                    Explore Now
+                </button>
+            </div>
+
+            </div>
+        </div>
+        <!-- ////////////////////////////////////////////////////////////////filter -->
+
+        <div class="container d-flex justify-content-between align-items-center gap-3 my-4 flex-wrap">
+                <div class="d-flex justify-content-start gap-3">
+                <div class="dropdown">
+  <button class="p-2 rounded scroll-to-top dropdown-toggle ther-color border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false" >
+    <i class="bi bi-arrow-down-up"></i>
+    Sort By:
+  </button>
+<ul class="dropdown-menu p-3 rounded-4 shadow border-0 ther-color">
+
+  <li>
+    <a class="dropdown-item active rounded-3 text-center mb-2 py-2" href="#">
+      Default
+    </a>
+  </li>
+
+  <li>
+    <a class="dropdown-item rounded-3 text-center mb-2 py-2  border-gold" href="#">
+      Most Popular
+    </a>
+  </li>
+
+  <li>
+    <a class="dropdown-item rounded-3 text-center mb-2 py-2  border-gold" href="#">
+      Highest Discount
+    </a>
+  </li>
+
+  <li>
+    <a class="dropdown-item rounded-3 text-center mb-2 py-2  border-gold" href="#">
+      Lowest Price
+    </a>
+  </li>
+
+  <li>
+    <a class="dropdown-item rounded-3 text-center mb-2 py-2  border-gold" href="#">
+      Highest Rated
+    </a>
+  </li>
+
+  <li>
+    <a class="dropdown-item rounded-3 text-center py-2  border-gold" href="#">
+      Ending Soon
+    </a>
+  </li>
+
+</ul>
+</div>
+                <div class="dropdown">
+  <button class="p-2 rounded scroll-to-top dropdown-toggle ther-color border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    <i class="bi bi-sliders"></i>
+    Filters
+  </button>
+    
+    
+<ul class="dropdown-menu p-0 rounded-4 shadow border-0 ther-color" style="width: 280px;">
+
+  <!-- Header -->
+<div class="filter-gold rounded-top-4 p-3 d-flex justify-content-between align-items-center">
+    <div class="d-flex align-items-center">
+      <i class="bi bi-sliders me-2"></i>
+      <h6 class="mb-0">Filters</h6>
+    </div>
+    <i class="bi bi-x-lg close-btn"></i>
+  </div>
+
+<div class="p-3">
+  <!-- Price -->
+  <h6 class="mb-2 fw-bold">Price Range</h6>
+  <div class="mb-3">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">0 - 200 EGP</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">200 - 500 EGP</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">500+ EGP</label>
+    </div>
+  </div>
+
+  <!-- Ratings -->
+  <h6 class="mb-2 fw-bold">Ratings</h6>
+  <div class="mb-3">
+    <div class="form-check d-flex align-items-center gap-2">
+      <input class="form-check-input" type="checkbox">
+      <div class="text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+      </div>
+    </div>
+
+    <div class="form-check d-flex align-items-center gap-2">
+      <input class="form-check-input" type="checkbox">
+      <div class="text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star"></i>
+      </div>
+    </div>
+
+    <div class="form-check d-flex align-items-center gap-2">
+      <input class="form-check-input" type="checkbox">
+      <div class="text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+      </div>
+    </div>
+
+    <div class="form-check d-flex align-items-center gap-2">
+      <input class="form-check-input" type="checkbox">
+      <div class="text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+      </div>
+    </div>
+
+    <div class="form-check d-flex align-items-center gap-2">
+      <input class="form-check-input" type="checkbox">
+      <div class="text-warning">
+        <i class="bi bi-star-fill"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+        <i class="bi bi-star"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- Type -->
+  <h6 class="mb-2 fw-bold">Type</h6>
+  <div class="mb-3">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">Historical</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">Museums</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">Landmarks</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">Ancient Sites</label>
+    </div>
+<!-- ///////////////Duration-->
+  </div>
+  <h6 class="mb-2 fw-bold">Duration</h6>
+  <div class="mb-3">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label"> < 2 hours</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">Half day</label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox">
+      <label class="form-check-label">Full day</label>
+    </div>
+
+
+  </div>
+
+  <!-- Buttons -->
+  <div class="d-flex justify-content-between gap-2">
+    <button class="rounded p-2 btn-light w-50 filter-gold  text-white">Reset</button>
+    <button class="rounded p-2 btn-warning w-50 scroll-to-top text-white">Apply</button>
+  </div>
+  </div>
+
+</ul>
+    </div>
+    </div>
+        <div class="d-flex flex-wrap gap-2 justify-content-lg-end">
+
+            <span class="badge border-gold text-dark px-4 py-3 rounded-pill fs-6">
+                Historical <i class="bi bi-x"></i>
+            </span>
+
+            <span class="badge border-gold text-dark px-4 py-3 rounded-pill fs-6">
+                4+ ⭐ <i class="bi bi-x"></i>
+            </span>
+
+            <span class="badge border-gold text-dark px-4 py-3 rounded-pill fs-6">
+                &lt;500 EGP <i class="bi bi-x"></i>
+            </span>
+
+        </div>
+
+            </div>
+            <div>
+
+        <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+
+        <button class="p-2 rounded-4 border-0 color-gold text-white rounded-pill px-4">All</button>
+
+        <button class="p-2 rounded-4 border-0 color2-gold text-white rounded-pill px-4">Historical</button>
+
+        <button class="p-2 rounded-4 border-0 color2-gold text-white rounded-pill px-4">Museums</button>
+
+        <button class="p-2 rounded-4 border-0 color2-gold text-white rounded-pill px-4">Landmarks</button>
+
+        <button class="p-2 rounded-4 border-0 color2-gold text-white rounded-pill px-4">Ancient</button>
+
+    </div>
+
+            
+
+        </div>
+    
+    <!-- ///////////////////// category -->
+    
+    <article>
+        <div class=" main-bg  ">
+            <div class="container py-5 ther-color">
+                <div class="d-flex justify-content-between mx-5">
+                    <div class="d-flex align-items-center gap-2">
+            <img src="photos/location.png" alt="Cairo" class="w-25">
+            <h2 class="text-center mb-0 fs-5 fw-bold justify-content-start">Cairo</h2>
+            </div>
+            <a href="#" class="text-decoration-none fs-6  p-2  ther-color  nav-opptions d-block text-center fw-bold"> View All <i class="bi bi-arrow-right  arrow"></i></a>
+               </div>
+
+
+            <div class="row g-5 mb-5 m-2 ">
+                <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card h-100">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/museum.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h5 class="fs-5 mb-2">The Grand Egyptian Museum</h5>
+                            <p class=" mb-2">Cairo</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Museum</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+                            <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card h-100">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/Pyramids.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h5 class="fs-5 mb-2">Pyramids of Giza</h5>
+                            <p class=" mb-2">Cairo</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Ancient Site</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+
+                            <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card ">
+                        <div  class="position-relative img-wrapper ">
+                            <img src="photos/mohamed ail.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content ">
+                            <div class="m-2">
+                            <h5 class="fs-5 mb-2">Cairo Citadel</h5>
+                            <p class=" mb-2">Cairo</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.9</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Historical/Landmark</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+
+
+            </div>
+            
+
+
+            <!-- ////////////////////// -->
+                        <div class="row g-5 mb-5 m-2">
+
+
+                    <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/Khan El-Khalili.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h4 class="fs-5 mb-2">Khan El-Khalili</h4>
+                            <p class=" mb-2">Cairo</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Cultural/Market</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+                            <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/AL-Muizz.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h4 class="fs-5 mb-2">AL-Muizz Street</h4>
+                            <p class=" mb-2">Cairo</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Historical/Landmark</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+            
+   
+
+
+            </div>
+                        
+            
+            </div>
+        </div>
+    </article>
+
+    <!-- ///////////////////////////////////////// -->
+
+    <article>
+        <div class=" main-bg  ">
+            <div class="container py-5 ther-color">
+                <div class="d-flex justify-content-between mx-5">
+                    <div class="d-flex align-items-center gap-2">
+            <img src="photos/location.png" alt="Luxor" class="w-25">
+            <h2 class="text-center mb-0 fs-5 fw-bold justify-content-start">Luxor</h2>
+            </div>
+            <a href="#" class="text-decoration-none fs-6  p-2  ther-color  nav-opptions d-block text-center fw-bold"> View All <i class="bi bi-arrow-right  arrow"></i></a>
+               </div>
+
+
+            <div class="row g-5 mb-5 m-2 ">
+                <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card h-100">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/Cultural.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h5 class="fs-5 mb-2">Karnak Temple</h5>
+                            <p class=" mb-2">Luxor</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Ancient/Landmark</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+                            <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card h-100">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/Luxor Temple.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h5 class="fs-5 mb-2">Luxor Temple</h5>
+                            <p class=" mb-2">Luxor</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Ancient Site/Historical</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+
+                            <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card ">
+                        <div  class="position-relative img-wrapper ">
+                            <img src="photos/Valley of Kings.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content ">
+                            <div class="m-2">
+                            <h5 class="fs-5 mb-2">Valley of Kings</h5>
+                            <p class=" mb-2">Luxor</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.9</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Ancient/Cultural</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+
+
+            </div>
+            
+
+
+            <!-- ////////////////////// -->
+                        <div class="row g-5 mb-5 m-2">
+
+
+                    <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/Hatshibsut Museum.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h4 class="fs-5 mb-2">Hatshepsut Temple</h4>
+                            <p class=" mb-2">Luxor</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Ancient/Landmark</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+
+            
+   
+
+
+            </div>
+                        
+            
+            </div>
+        </div>
+    </article>
+    <!-- //////////////////////////////////////////////////////////////////////////////////// -->
+         <article>
+        <div class=" main-bg  ">
+            <div class="container py-5 ther-color">
+                <div class="d-flex justify-content-between mx-5">
+                    <div class="d-flex align-items-center gap-2">
+            <img src="photos/location.png" alt="Cairo" class="w-25">
+            <h2 class="text-center mb-0 fs-5 fw-bold justify-content-start">Aswan</h2>
+            </div>
+            <a href="#" class="text-decoration-none fs-6  p-2  ther-color  nav-opptions d-block text-center fw-bold"> View All <i class="bi bi-arrow-right  arrow"></i></a>
+               </div>
+
+
+            <div class="row g-5 mb-5 m-2 ">
+                <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card h-100">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/Philae Temple.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h5 class="fs-5 mb-2">Philae Temple</h5>
+                            <p class=" mb-2">Aswan</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Ancient/Landmark</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+                            <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card h-100">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/Abu SImbel.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h5 class="fs-5 mb-2">Abu SSimbel Temple</h5>
+                            <p class=" mb-2">Aswan</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Ancient/Landmark</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+
+                            <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card ">
+                        <div  class="position-relative img-wrapper ">
+                            <img src="photos/Nuba.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content ">
+                            <div class="m-2">
+                            <h5 class="fs-5 mb-2">Cultural</h5>
+                            <p class=" mb-2">Aswan</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.9</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Historical/Landmark</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+
+
+            </div>
+            
+
+
+            <!-- ////////////////////// -->
+                        <div class="row g-5 mb-5 m-2">
+
+
+                    <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/Nubian Museum.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h4 class="fs-5 mb-2">Nubian Museum</h4>
+                            <p class=" mb-2">Aswan</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Museum/Cultural</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+            
+   
+
+
+            </div>
+                        
+            
+            </div>
+        </div>
+    </article>
+
+     <!--/////////////////////////////////////////////////////////////////////////////  -->
+
+         <article>
+        <div class=" main-bg  ">
+            <div class="container py-5 ther-color">
+                <div class="d-flex justify-content-between mx-5">
+                    <div class="d-flex align-items-center gap-2">
+            <img src="photos/location.png" alt="Alexandria" class="w-25">
+            <h2 class="text-center mb-0 fs-5 fw-bold justify-content-start">Alexandria</h2>
+            </div>
+            <a href="#" class="text-decoration-none fs-6  p-2  ther-color  nav-opptions d-block text-center fw-bold"> View All <i class="bi bi-arrow-right  arrow"></i></a>
+               </div>
+
+
+            <div class="row g-5 mb-5 m-2 ">
+                <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card h-100">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/Alexandrina.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h5 class="fs-5 mb-2">Bibliotheca Alexandrina</h5>
+                            <p class=" mb-2">Alexandria</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Cultural/Landmark</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+                            <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card h-100">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/Qaitbay.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h5 class="fs-5 mb-2">Qaitbay Citadel</h5>
+                            <p class=" mb-2">Alexandria</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Historical/Landmark</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+
+                            <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card ">
+                        <div  class="position-relative img-wrapper ">
+                            <img src="photos/catacombs.png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content ">
+                            <div class="m-2">
+                            <h5 class="fs-5 mb-2">catacombs of kom el shoqafa</h5>
+                            <p class=" mb-2">Alexandria</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.9</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Ancient/Landmark</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+
+
+            </div>
+            
+
+
+            <!-- ////////////////////// -->
+                        <div class="row g-5 mb-5 m-2">
+
+
+                    <div class="col-12 col-md-4 ">
+                    <div class=" h-auto color-big p-2 rounded-4 category-card">
+                        <div  class="position-relative img-wrapper">
+                            <img src="photos/montaza .png" alt="Desert Safari" class="w-100 image-category">
+                           <i class="bi bi-suit-heart-fill position-absolute translate-middle-x top-0 end-0 fs-2 text-white fav-btn"></i>
+                        </div>
+                            <div class=" ther-color fw-bold card-content">
+                            <div class="m-2">
+                            <h4 class="fs-5 mb-2">montaza palace gardens</h4>
+                            <p class=" mb-2">Alexandria</p>
+                            <div class="d-flex align-items-center ">
+                                <i class="bi bi-star-fill star-color me-1"></i>
+                                <p>4.8</p>
+
+                            </div>
+                            <div class="d-flex justify-content-between gap-1">
+
+                                
+                                <a href="#" class="text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-start  ther-color">
+                                <i class="bi bi-geo-fill"></i>Cultural/Lanscape</a>
+                                
+
+
+                            <a href="#" class="place-btn text-decoration-none fs-6 mt-2 color-big2 p-2 w-auto rounded-5 text-start d-inline-block justify-content-end ther-color">
+                                Explore <i class="bi bi-arrow-right "></i>
+                            </a>
+                            </div>
+                            </div>
+                    </div>
+                        
+                </div>
+            </div>
+
+            </div>
+                        
+            
+            </div>
+        </div>
+    </article>
+
+<!-- ///////////////////////////////////////////////////////////////////////////////// -->
+  
+    <footer class="footer-bg pt-5 footer ">
+
+        <div class="container px-4 px-md-5 align-items-center">
+            <div class="row text-start px-4 md:px-8">
+
+                <!-- LOGO -->
+                <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-start mx-auto">
+                    <img src="img/logo.png" class="mb-3 " style="width:120px;">
+
+                    <p class="lh-lg fs-6 fw-bold">
+                        Explore Egypt In A Smarter And Easier Way.
+                        Discover Places, Book Trips, And Enjoy Your Journey.
+                    </p>
+                </div>
+
+                <!-- LINKS -->
+                <div class="col-lg-4 col-md-6 mb-4 text-start d-flex flex-column align-items-center text-decoration-none">
+                    <ul class="list-unstyled ">
+                        <a href="#" class="text-decoration-none">
+                            <li class="mb-2 footer-link fs-6 fw-semibold gold ">Explore</li>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <li class="mb-2 footer-link fs-6 fw-semibold gold">Packages</li>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <li class="mb-2 footer-link fs-6 fw-semibold gold">Offers</li>
+                        </a>
+                    </ul>
+                    <ul class="list-unstyled mt-4">
+                        <a href="#" class="text-decoration-none">
+                            <li class="mb-2 footer-link fs-6 fw-semibold gold">About us</li>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <li class="mb-2 footer-link fs-6 fw-semibold gold">Contact</li>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <li class="mb-2 footer-link fs-6 fw-semibold gold">FAQs</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex flex-column align-items-center align-items-lg-start 
+            text-center text-lg-start mx-auto">
+                    <h5 class="mb-2 fs-5 fw-semibold">Contact Us:</h5>
+                    <p class="mb-5 fs-6 fw-semibold footer-link">Info@gawla.com</p>
+
+                    <h5 class="mt-5 mb-3 fw-semibold fs-5">Follow Us</h5>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-4 fs-5">
+                        <a href="#" class=" fs-4">
+                            <i class="fa-brands fa-instagram gold text-decoration-none footer-link"></i>
+                        </a>
+
+                        <a href="#" class=" fs-4">
+                            <i class="fa-brands fa-facebook-f gold text-decoration-none footer-link"></i>
+                        </a>
+
+                        <a href="#" class="fs-4">
+                            <i class="fa-brands fa-x-twitter gold text-decoration-none footer-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- bottom -->
+        <div class="text-start py-2 mt-4 fs-6 fw-bolder ps-3 " style="background:#A48F64; color:black;">
+            © 2026 Gawla. All rights reserved
+        </div>
+
+    </footer>   
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Owl -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
