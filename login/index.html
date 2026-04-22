@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="images/logo.png">
+    <title>Gawla</title>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100 ">
+    <div class="login-card w-100">
+  <div class="row h-100 ">
+    
+    <div class="col-md-4 col-4 pic ">
+    </div>
+
+    <div class="col-md-8 col-8 main-bg ">
+        <div class="d-flex flex-column  m-3">
+            <div>
+                <div class="d-flex align-items-center">
+                    <h2 class="mb-0 me-2 ther-color">Welcome back</h2>
+                    <img src="images/Vector.png" width="25">
+                </div>
+                <p class=" my-3 ther-color welcome-text">Log in to continue your journey</p>
+            </div>
+
+    </div>
+    <div class="container  d-flex justify-content-center">
+        <div class="form-box w-100">
+            <form class="d-flex flex-column  m-1 " action="login.php" method="POST">
+                <div class="mb-3">
+                    <label for="email" class="form-label ther-color fw-bold ">Email address</label>
+                    <input type="email" class="form-control  color-big box " id="email" name="email" placeholder="Enter your email....." required>
+                </div>
+                <div class="mb-3 position-relative">
+                    <label class="form-label fw-bold ther-color">Password</label>
+
+                    <input type="password" class="form-control pe-5 color-big box password-input">
+
+                    <i class="bi bi-eye togglePassword position-absolute end-0 translate-middle-x me-3"
+                    style="cursor: pointer;"></i>
+                </div>
+               <div class="d-flex justify-content-between align-items-center mb-4">
+    
+                    <div >
+                        <label class="form-check-label fw-lighter ther-color labol " for="rememberMe">Remember me</label>
+                        <input type="checkbox" class="form-check-input " id="rememberMe">
+                    </div>
+
+                    <a href="reset.html" class="text-decoration-none fw-lighter font-gold ps-1 labol ">Forgot password?</a>
+
+                </div>
+
+                <a href="../grad-front/home.html" class="text-center bg-gold text-white border-0 rounded-2 p-2 text-decoration-none">Sign in </a>
+            </form>
+<div class="d-flex align-items-center my-3 ther-color">
+    <hr class="flex-grow-1">
+    <span class="mx-2">OR</span>
+    <hr class="flex-grow-1">
+</div>
+<div class="d-flex flex-column  m-3 ">
+    <button class=" border-0 rounded-2 p-2  mb-2 d-flex align-items-center justify-content-center color-big ther-color welcome-text">
+        <i class="bi bi-google me-3"></i> Sign in with Google
+    </button>
+    <button class="border-0 rounded-2 p-2  d-flex align-items-center justify-content-center color-big ther-color welcome-text">
+        <i class=" bi bi-apple me-2"></i> continue with apple
+    </button>
+
+  </div>
+  <div class="d-flex justify-content-center">
+      <p href="#" class="text-decoration-none ther-color welcome-text">don’t have an account?</p>
+      <a href="signup.html" class="text-decoration-none ms-2 font-gold welcome-text">sign up</a>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
