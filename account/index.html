@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gawla</title>
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+     <!-- Owl -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+        <!-- //////////////////////////////// -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="img/logo.png">
+    </head>
+<body>
+    <button class="position-fixed bottom-0 end-0  border-0 translate-middle scroll-to-top text-white rounded-3 p-2" id="up">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+
+<nav class="main-bg sticky-top">
+  <div class=" px-2">
+
+    <!-- Top Navbar -->
+    <div class="row align-items-center py-2 g-2">
+
+      <!-- Mobile Menu Button -->
+      <div class="col-2 d-lg-none text-start">
+
+        <button class="navbar-toggler ther-color border-0 shadow-none p-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mobileMenu">
+
+          <i class="bi bi-list fs-2"></i>
+
+        </button>
+
+      </div>
+
+      <!-- Logo -->
+      <div class="col-5 col-lg-2 text-center text-lg-start">
+
+        <a href="#">
+          <img src="img/logo croped.png"
+            class="img-fluid"
+            style="max-width:70px;">
+        </a>
+
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="col d-none d-lg-flex justify-content-center">
+
+        <ul class="nav m-2">
+
+          <li class="nav-item">
+            <a href="../grad-front/home.html" class="nav-link nav-opptions ther-color">
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="../grad-front/category.html" class="nav-link nav-opptions ther-color">
+              Category
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-opptions ther-color">
+              Hidden Gems
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link nav-opptions ther-color">
+              Offers
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <!-- Right Side -->
+      <div class="col-4 col-lg-3 d-flex justify-content-end align-items-center gap-1 flex-nowrap">
+
+
+        <button class="btn rounded-circle d-flex align-items-center justify-content-center color-big "
+          style="width:40px; height:40px;">
+          <i class="bi bi-person"></i>
+        </button>
+
+        <a href="../booking/index.html"
+          class=" rounded-circle d-flex align-items-center justify-content-center color-big p-2"
+          style="width:38px; height:38px; flex-shrink:0;">
+
+          <img src="img/card.png" class="w-100">
+
+        </a>
+
+      </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="collapse d-lg-none pb-3" id="mobileMenu">
+
+      <ul class="nav flex-column ">
+
+        <li class="nav-item">
+          <a href="../grad-front/home.html" class="nav-link nav-opptions ther-color">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="../grad-front/category.html" class="nav-link nav-opptions ther-color">
+            Category
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link nav-opptions ther-color">
+            Hidden Gems
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#" class="nav-link nav-opptions ther-color">
+            Offers
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</nav>
+ <!-- ///////////////////////////////////////////////////////////////////////////////// -->
+
+<article>
+    <div class="container-fluid">
+      <div class="row flex-column flex-md-row min-vh-100">
+
+        <!-- Sidebar -->
+        <div class="col-12 col-md-3 col-lg-2 bg-white p-3 border-end-0 border-top-0 rounded-4 border">
+
+<div class="d-flex align-items-center mb-4">
+        <div class="rounded-circle user text-white d-flex justify-content-center align-items-center me-2" style="width:40px;height:40px;">
+          S
+        </div>
+        <strong>Sara Ahmed</strong>
+      </div>
+
+          <div class="nav flex-column nav-pills" role="tablist">
+
+            <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#profile">
+              Profile
+            </button>
+
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#favorites">
+              Favorites
+            </button>
+
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#points">
+              Points
+            </button>
+
+            <button class="nav-link" data-bs-toggle="pill" data-bs-target="#trips">
+              Trip history
+            </button>
+
+            <button class="nav-link " data-bs-toggle="modal" data-bs-target="#logoutModal">
+              Logout
+            </button>
+
+            <button class="nav-link " data-bs-toggle="modal" data-bs-target="#deleteModal">
+              Delete account
+            </button>
+
+          </div>
+
+        </div>
+
+        <!-- Content -->
+        <div class="col-md-9 col-lg-10 p-4 ">
+
+          <div class="tab-content">
+
+            <!-- Profile -->
+<div class="tab-pane fade show active" id="profile">
+  <div class="bg-white p-4 rounded-4 shadow-sm">
+    <div class="row g-3">
+
+      <div class="col-md-6">
+        <label class="form-label">First Name</label>
+        <input type="text" class="form-control" value="Sara" readonly>
+        <p class="text-end gold"
+           style="cursor:pointer;"
+           onclick="editField(this)">
+           change
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Second Name</label>
+        <input type="text" class="form-control" value="Ahmed" readonly>
+        <p class="text-end gold"
+           style="cursor:pointer;"
+           onclick="editField(this)">
+           change
+        </p>
+      </div>
+
+      <div class="col-12">
+        <label class="form-label">Email</label>
+        <input type="email" class="form-control"
+               value="Saraahmed22@gmail.com" readonly>
+        <p class="text-end gold"
+           style="cursor:pointer;"
+           onclick="editField(this)">
+           change
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Birthday Date</label>
+        <input type="date" class="form-control" readonly>
+        <p class="text-end gold"
+           style="cursor:pointer;"
+           onclick="editField(this)">
+           change
+        </p>
+      </div>
+
+      <div class="col-md-6">
+        <label class="form-label">Phone Number</label>
+        <input type="text" class="form-control"
+               value="01167548999" readonly>
+        <p class="text-end gold"
+           style="cursor:pointer;"
+           onclick="editField(this)">
+           change
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+            <!-- Favorites -->
+            <div class="tab-pane fade" id="favorites">
+              <div id="favoritesContent" class="d-flex justify-content-center w-100" style="min-height: 60vh;">
+
+                <div class="bg-white p-4 rounded-4 shadow-sm w-100">
+                  <div class="d-flex align-items-baseline gap-3 mb-4">
+                    <h5 class="mb-4 fw-bold">Your Favorites</h5>
+
+                    <div class="dropdown">
+
+                      <button class="btn filter-btn dropdown-toggle scroll-to-top" data-bs-toggle="dropdown">
+                        <i class="bi bi-sliders me-2"></i> Filters
+                      </button>
+
+                      <div class="dropdown-menu p-0 border-0 shadow filter-menu">
+
+                        <!-- Header -->
+                        <div class="filter-header d-flex justify-content-between align-items-center px-3 py-2">
+                          <div class="d-flex align-items-center gap-2">
+                            <i class="bi bi-sliders"></i>
+                            <span class="fw-semibold">Filters</span>
+                          </div>
+                          <span class="close-btn" data-bs-toggle="dropdown">✕</span>
+                        </div>
+
+                        <!-- Body -->
+                        <div class="p-3">
+
+                          <h5 class="fw-bold mb-3">Type</h5>
+
+                          <!-- Items -->
+                          <div class="form-check custom-check">
+                            <input class="form-check-input" type="checkbox" id="all" checked>
+                            <label class="form-check-label" for="all">All</label>
+                          </div>
+
+                          <div class="form-check custom-check">
+                            <input class="form-check-input" type="checkbox" id="cultural">
+                            <label class="form-check-label" for="cultural">Cultural</label>
+                          </div>
+
+                          <div class="form-check custom-check">
+                            <input class="form-check-input" type="checkbox" id="religious">
+                            <label class="form-check-label" for="religious">Religious</label>
+                          </div>
+
+                          <div class="form-check custom-check">
+                            <input class="form-check-input" type="checkbox" id="safari">
+                            <label class="form-check-label" for="safari">Safari</label>
+                          </div>
+
+                          <div class="form-check custom-check">
+                            <input class="form-check-input" type="checkbox" id="medical">
+                            <label class="form-check-label" for="medical">Medical</label>
+                          </div>
+
+                          <div class="form-check custom-check">
+                            <input class="form-check-input" type="checkbox" id="coastal">
+                            <label class="form-check-label" for="coastal">Coastal</label>
+                          </div>
+
+                          <div class="form-check custom-check">
+                            <input class="form-check-input" type="checkbox" id="entertainment">
+                            <label class="form-check-label" for="entertainment">Entertainment</label>
+                          </div>
+
+                          <!-- Button -->
+                          <button class="apply-btn mt-4 w-100">Apply Filter</button>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+
+                  </div>
+
+
+<div class="row border border-secondary-subtle p-2 rounded-4 mb-4 position-relative color-big">
+
+    <!-- القلب فوق يمين -->
+    <i class="bi bi-suit-heart-fill fav-btn"></i>
+
+    <div class="col-lg-3 col-12">
+        <img src="img/mohamed ali.png" class="h-100 w-100 border-0 rounded-5">
+    </div>
+
+    <div class="col-lg-9 col-12">
+        <h3 class="fs-6 fw-bold pt-3 ther-color">
+            Prince Mohamed Ali Palace
+        </h3>
+
+        <div class="p-3">
+
+            <!-- Info -->
+            <div class="d-flex flex-column gap-3 mb-3 color-box">
+
+                <div class="d-flex align-items-center gap-2">
+                    <i class="bi bi-geo-alt fw-bold"></i>
+                    <span>Cairo</span>
+                </div>
+
+                <div class="d-flex flex-wrap gap-5">
+
+                    <div class="text-warning">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                    </div>
+
+                    <span>Valid till 19 May</span>
+
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+
+<div class="d-flex flex-column flex-md-row align-items-start align-items-md-center gap-1 gap-md-3">
+
+    <small class="text-decoration-line-through text-secondary">
+        150 EGP
+    </small>
+
+    <p class="fw-bold fs-5 mb-0">
+        100 EGP
+    </p>
+
+</div>
+
+                <button class="border rounded-4 p-2 ther-color scroll-to-top">
+                    Book Now
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+                </div>
+              </div>
+
+              <!-- الحالة 2: مفيش بيانات -->
+              <!-- <div id="emptyFavorites" class="d-flex justify-content-center align-items-center" style="min-height: 60vh;">
+
+  <div class="p-5 rounded-4 shadow-sm w-100 bg-white" style="max-width: 700px; "> -->
+
+              <!-- Title -->
+              <!-- <h5 class="mb-4 fw-bold">Your Favorites</h5> -->
+
+              <!-- Text -->
+              <!-- <div class="mb-4">
+      <p class="text-muted mb-2">Your favorites list is empty</p>
+
+      <p class="text-muted">
+        Discover amazing places and add them to favorites
+      </p>
+    </div> -->
+
+              <!-- Button -->
+              <!-- <div class="d-flex justify-content-end">
+      <button class="btn px-4 scroll-to-top">
+        Discover Now
+      </button>
+    </div>
+
+  </div>
+
+</div> -->
+            </div>
+
+            <!-- Points -->
+
+            <div class="tab-pane fade" id="points">
+
+              <div class="bg-white p-4 rounded-4 shadow-sm">
+
+                <h4 class="fw-bold">Your points</h4>
+
+                <!-- Points summary -->
+                <div class="d-flex align-items-center gap-3 my-4">
+                  <img src="img/points.png" style="width:40px;">
+                  <span class="fw-semibold">1,090 points</span>
+                </div>
+
+                <!-- Tabs -->
+                <ul class="nav nav-tabs custom-tabs d-flex justify-content-between" id="pointsTabs">
+
+                  <li class="nav-item">
+                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#points-all">
+                      All
+                    </button>
+                  </li>
+
+                  <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#points-available">
+                      Available
+                    </button>
+                  </li>
+
+                  <li class="nav-item">
+                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#points-spent">
+                      Spent
+                    </button>
+                  </li>
+
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content mt-3">
+
+                  <!-- All -->
+                  <div class="tab-pane fade show active" id="points-all">
+
+                    <!-- item -->
+                    <div
+                      class="point-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+
+                      <div class="d-flex align-items-center gap-3 my-4">
+                        <img src="img/points.png" style="width:35px;">
+                        <span class="fw-semibold">1,090 points</span>
+                      </div>
+
+                      <span class="point-status">
+                        Points are expiring on 16 May, 2026
+                      </span>
+
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- item -->
+                    <div
+                      class="point-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+
+                      <div class="d-flex align-items-center gap-3 my-4">
+                        <img src="img/points.png" style="width:35px;">
+                        <span class="fw-semibold">230 points</span>
+                      </div>
+
+                      <span class="point-status">
+                        Points are expiring on 27 May, 2026
+                      </span>
+
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- expired -->
+                    <div
+                      class="point-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+
+                      <div class="d-flex align-items-center gap-3 my-4">
+                        <img src="img/silver.png" style="width:35px;">
+                        <span class="fw-semibold text-muted">154 points</span>
+                      </div>
+
+                      <span class="point-status text-muted">
+                        Points are no longer valid
+                      </span>
+
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- item -->
+                    <div
+                      class="point-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+
+                      <div class="d-flex align-items-center gap-3 my-4">
+                        <img src="img/points.png" style="width:35px;">
+                        <span class="fw-semibold">460 points</span>
+                      </div>
+
+                      <span class="point-status">
+                        Points are expiring on 11 April, 2026
+                      </span>
+
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- item -->
+                    <div
+                      class="point-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+
+                      <div class="d-flex align-items-center gap-3 my-4">
+                        <img src="img/points.png" style="width:35px;">
+                        <span class="fw-semibold">300 points</span>
+                      </div>
+
+                      <span class="point-status">
+                        Points are expiring on 23 April, 2026
+                      </span>
+
+                    </div>
+
+                  </div>
+                  <!-- Available -->
+                  <div class="tab-pane fade" id="points-available">
+
+                    <!-- item -->
+                    <div
+                      class="point-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+
+                      <div class="d-flex align-items-center gap-3 my-4">
+                        <img src="img/points.png" style="width:35px;">
+                        <span class="fw-semibold">1,090 points</span>
+                      </div>
+
+                      <span class="point-status">
+                        Points are expiring on 16 May, 2026
+                      </span>
+
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- item -->
+                    <div
+                      class="point-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+
+                      <div class="d-flex align-items-center gap-3 my-4">
+                        <img src="img/points.png" style="width:35px;">
+                        <span class="fw-semibold">230 points</span>
+                      </div>
+
+                      <span class="point-status">
+                        Points are expiring on 27 May, 2026
+                      </span>
+
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- item -->
+                    <div
+                      class="point-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+
+                      <div class="d-flex align-items-center gap-3 my-4">
+                        <img src="img/points.png" style="width:35px;">
+                        <span class="fw-semibold">460 points</span>
+                      </div>
+
+                      <span class="point-status">
+                        Points are expiring on 11 April, 2026
+                      </span>
+
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- item -->
+                    <div
+                      class="point-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+
+                      <div class="d-flex align-items-center gap-3 my-4">
+                        <img src="img/points.png" style="width:35px;">
+                        <span class="fw-semibold">300 points</span>
+                      </div>
+
+                      <span class="point-status">
+                        Points are expiring on 23 April, 2026
+                      </span>
+
+                    </div>
+
+                  </div>
+                  <!-- Spent -->
+                  <div class="tab-pane fade" id="points-spent">
+
+                    <!-- item -->
+                    <div
+                      class="point-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+
+                      <div class="d-flex align-items-center gap-3 my-4">
+                        <img src="img/points.png" style="width:35px;">
+                        <span class="fw-semibold ">-150 points</span>
+                      </div>
+
+                      <span class="point-status text-muted">
+                        Pyramids Ticket Discount - 8 May, 2026
+                      </span>
+
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- item -->
+                    <div
+                      class="point-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+
+                      <div class="d-flex align-items-center gap-3 my-4">
+                        <img src="img/points.png" style="width:35px;">
+                        <span class="fw-semibold ">-80 points</span>
+                      </div>
+
+                      <span class="point-status text-muted">
+                        Egyptian Museum Ticket Discount — 03 May, 2026
+                      </span>
+
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <!-- item -->
+                    <div
+                      class="point-item d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center">
+
+                      <div class="d-flex align-items-center gap-3 my-4">
+                        <img src="img/points.png" style="width:35px;">
+                        <span class="fw-semibold ">-220 points</span>
+                      </div>
+
+                      <span class="point-status text-muted">
+                        Nile Cruise Ticket Discount — 27 Apr, 2026
+                      </span>
+
+                    </div>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+              <!-- <div id="emptypoints" class="d-flex justify-content-center align-items-center" style="min-height: 60vh;">
+
+  <div class="p-5 rounded-4 shadow-sm w-100 bg-white" style="max-width: 700px; "> 
+
+    <h5 class="mb-4 fw-bold">Your points  </h5>
+
+   
+    <div class="mb-4">
+      <p class="text-muted mb-2">No points yet</p>
+
+      <p class="text-muted">
+        Start exploring to earn points
+      </p>
+    </div> 
+ 
+
+  </div>
+
+</div> -->
+
+
+
+            </div>
+
+
+            <!-- Trips -->
+
+            <div class="tab-pane " id="trips">
+
+              <div class="bg-white p-4 rounded-4 shadow-sm">
+                <!-- Title -->
+                <h5 class="fw-bold mb-3">Your Trips</h5>
+                <p class="fw-semibold mb-4">3 Trips</p>
+
+
+                <!-- Trip 1 -->
+                <div class="trip-item mb-3">
+
+                  <div class="d-flex justify-content-between align-items-start">
+
+                    <div>
+                      <p class="mb-1 fw-semibold">Pyramids Booking — 12 May, 2026</p>
+
+                      <button type="button" class="view-btn btn p-0 text-muted border-0 bg-transparent"
+                        data-bs-toggle="collapse" data-bs-target="#trip1">
+
+                        View details <span class="arrow">▼</span>
+                      </button>
+                    </div>
+
+                    <button class="btn btn-sm px-3 text-white trip-btn" style="background:#A48F64C9;">
+                      Order again
+                    </button>
+
+                  </div>
+
+                  <div id="trip1" class="collapse mt-2">
+                    <div class="p-3 rounded-3 bg-light border">
+                      <p class="mb-1 text-muted small">Egyptian Adult Ticket ×2</p>
+                      <p class="mb-1 text-muted small">Foreign Adult Ticket ×1</p>
+                      <p class="mb-1 text-muted small">Student Ticket ×1</p>
+                      <p class="fw-semibold small mt-2">Total: EGP 1,250</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Trip 2 -->
+                <div class="trip-item mb-3">
+
+                  <div class="d-flex justify-content-between align-items-center">
+
+                    <div>
+                      <p class="mb-1 fw-semibold">Cairo Heritage Package — 08 May, 2026</p>
+
+                      <button type="button" class="view-btn btn p-0 text-muted border-0 bg-transparent"
+                        data-bs-toggle="collapse" data-bs-target="#trip2">
+
+                        View details <span class="arrow">▼</span>
+                      </button>
+                    </div>
+
+                    <button class="btn btn-sm px-3 text-white trip-btn" style="background:#A48F64C9;">
+                      Order again
+                    </button>
+
+                  </div>
+
+                  <div id="trip2" class="collapse mt-2">
+                    <div class="p-3 rounded-3 bg-light border">
+                      <p class="mb-1 text-muted small">Foreign Adult Ticket ×2</p>
+                      <p class="mb-1 text-muted small">Egyptian Adult Ticket ×2</p>
+                      <p class="mb-1 text-muted small">Child Ticket ×1</p>
+                      <p class="fw-semibold small mt-2">Total: EGP 2,450</p>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="divider"></div>
+
+                <!-- Trip 3 -->
+                <div class="trip-item">
+
+                  <div class="d-flex justify-content-between align-items-center">
+
+                    <div>
+                      <p class="mb-1 fw-semibold">3 Attractions Booking — 03 May, 2026</p>
+
+                      <button type="button" class="view-btn btn p-0 text-muted border-0 bg-transparent"
+                        data-bs-toggle="collapse" data-bs-target="#trip3">
+
+                        View details <span class="arrow">▼</span>
+                      </button>
+                    </div>
+
+                    <button class="btn btn-sm px-3 text-white trip-btn" style="background:#A48F64C9;">
+                      Order again
+                    </button>
+
+                  </div>
+
+                  <div id="trip3" class="collapse mt-2">
+                    <div class="p-3 rounded-3 bg-light border">
+
+                      <p class="fw-semibold small mb-1">Pyramids</p>
+                      <ul class="small text-muted mb-2">
+                        <li>Foreign Adult Ticket ×1</li>
+                        <li>Egyptian Adult Ticket ×2</li>
+                      </ul>
+
+                      <p class="fw-semibold small mb-1">Egyptian Museum</p>
+                      <ul class="small text-muted mb-2">
+                        <li>Student Ticket ×1</li>
+                        <li>Egyptian Adult Ticket ×1</li>
+                      </ul>
+
+                      <p class="fw-semibold small mb-1">Cairo Tower</p>
+                      <ul class="small text-muted mb-2">
+                        <li>Egyptian Adult Ticket ×1</li>
+                      </ul>
+
+                      <p class="fw-semibold small mt-2">Total: EGP 1,620</p>
+
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+              <!-- <div id="emptytrips" class="d-flex justify-content-center align-items-center" style="min-height: 60vh;">
+
+  <div class="p-5 rounded-4 shadow-sm w-100 bg-white" style="max-width: 700px; "> 
+
+    <h5 class="mb-4 fw-bold">Your points  </h5>
+
+   
+    <div class="mb-4">
+      <p class="text-muted mb-2">You haven’t taken any trips yet</p>
+    </div> 
+ 
+
+  </div>
+
+</div> -->
+
+            </div>
+
+         
+          <!-- logout -->
+          <div class="modal fade" id="logoutModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content rounded-4 color-big2 p-4">
+
+                <div class="modal-body text-center">
+                  Are you sure you want to log out?
+                </div>
+
+                <div class="modal-footer border-0 d-flex justify-content-between ">
+                  <button class="btn text-white px-4 scroll-to-top" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+                  <button class="btn text-white px-4 scroll-to-top">
+                    Logout
+                  </button>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Delete -->
+          <div class="modal fade" id="deleteModal" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content rounded-4 color-big2 p-4">
+
+                <div class="modal-body text-center">
+                  Are you sure you want to delete your account?
+                </div>
+
+                <div class="modal-footer border-0 d-flex justify-content-between ">
+
+                  <button class="btn text-white px-4 scroll-to-top" data-bs-dismiss="modal">
+                    Cancel
+                  </button>
+
+                  <button class="btn text-white px-4 scroll-to-top ">
+                    Delete
+                  </button>
+
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+    </div>
+  </article>
+
+
+
+
+
+<!-- ///////////////////////////////////////////////////////////////footer -->
+
+  
+    <footer class="footer-bg pt-5 footer ">
+
+        <div class="container px-4 px-md-5 align-items-center">
+            <div class="row text-start px-4 md:px-8">
+
+                <!-- LOGO -->
+                <div class="col-lg-4 col-md-6 mb-4 d-flex flex-column align-items-start mx-auto">
+                    <img src="img/logo.png" class="mb-3 " style="width:120px;">
+
+                    <p class="lh-lg fs-6 fw-bold">
+                        Explore Egypt In A Smarter And Easier Way.
+                        Discover Places, Book Trips, And Enjoy Your Journey.
+                    </p>
+                </div>
+
+                <!-- LINKS -->
+                <div class="col-lg-4 col-md-6 mb-4 text-start d-flex flex-column align-items-center text-decoration-none">
+                    <ul class="list-unstyled ">
+                        <a href="#" class="text-decoration-none">
+                            <li class="mb-2 footer-link fs-6 fw-semibold gold ">Explore</li>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <li class="mb-2 footer-link fs-6 fw-semibold gold">Packages</li>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <li class="mb-2 footer-link fs-6 fw-semibold gold">Offers</li>
+                        </a>
+                    </ul>
+                    <ul class="list-unstyled mt-4">
+                        <a href="#" class="text-decoration-none">
+                            <li class="mb-2 footer-link fs-6 fw-semibold gold">About us</li>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <li class="mb-2 footer-link fs-6 fw-semibold gold">Contact</li>
+                        </a>
+                        <a href="#" class="text-decoration-none">
+                            <li class="mb-2 footer-link fs-6 fw-semibold gold">FAQs</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <!-- CONTACT -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex flex-column align-items-center align-items-lg-start 
+            text-center text-lg-start mx-auto">
+                    <h5 class="mb-2 fs-5 fw-semibold">Contact Us:</h5>
+                    <p class="mb-5 fs-6 fw-semibold footer-link">Info@gawla.com</p>
+
+                    <h5 class="mt-5 mb-3 fw-semibold fs-5">Follow Us</h5>
+                    <div class="d-flex justify-content-center justify-content-md-start gap-4 fs-5">
+                        <a href="#" class=" fs-4">
+                            <i class="fa-brands fa-instagram gold text-decoration-none footer-link"></i>
+                        </a>
+
+                        <a href="#" class=" fs-4">
+                            <i class="fa-brands fa-facebook-f gold text-decoration-none footer-link"></i>
+                        </a>
+
+                        <a href="#" class="fs-4">
+                            <i class="fa-brands fa-x-twitter gold text-decoration-none footer-link"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- bottom -->
+        <div class="text-start py-2 mt-4 fs-6 fw-bolder ps-3 " style="background:#A48F64; color:black;">
+            © 2026 Gawla. All rights reserved
+        </div>
+
+    </footer>   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
