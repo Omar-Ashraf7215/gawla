@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramids of Giza - Cairo Tourism</title>
+    <meta name="description" content="Explore the iconic Pyramids of Giza. Book tickets, plan your visit, and discover activities at one of the world's greatest landmarks.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="place-detail.css">
+    <link rel="stylesheet" href="chatbot.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header header-detail">
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-sun logo-icon"></i>
+            <span>GAWLA</span>
+        </a>
+        <nav class="nav-links" id="nav-links">
+            <a href="index.html">Home</a>
+            <a href="#">Category</a>
+            <a href="#">Hidden Gems</a>
+            <a href="#">Offers</a>
+        </nav>
+        <div class="header-actions" id="header-actions">
+            <button class="btn-outline" onclick="window.location.href='login.html'">Log in</button>
+            <button class="btn-solid">Sign Up</button>
+            <div class="cart-circle">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+
+    <!-- Place Hero -->
+    <section class="place-hero" style="background-image: url('assets/pyramids_camels.png');">
+        <div class="place-hero-content">
+            <h1>Pyramids of Giza</h1>
+            <p class="place-location"><i class="fa-solid fa-location-dot"></i> Cairo, Egypt</p>
+        </div>
+    </section>
+
+    <!-- Image Gallery -->
+    <section class="gallery-section">
+        <div class="gallery-grid">
+            <div class="gallery-main">
+                <img src="assets/pyramids_camels.png" alt="Pyramids of Giza" id="gallery-main-img">
+            </div>
+            <div class="gallery-thumbs">
+                <div class="thumb active" onclick="changeMainImage(this)">
+                    <img src="assets/pyramids_camels.png" alt="Pyramids view 1">
+                </div>
+                <div class="thumb" onclick="changeMainImage(this)">
+                    <img src="assets/hero_sunset.png" alt="Cairo skyline">
+                </div>
+                <div class="thumb" onclick="changeMainImage(this)">
+                    <img src="assets/pyramids_sky.png" alt="Pyramids Dramatic Sky">
+                </div>
+                <div class="thumb" onclick="changeMainImage(this)">
+                    <img src="assets/khan_el_khalili.png" alt="Khan el Khalili">
+                </div>
+            </div>
+        </div>
+
+        <!-- Info Badges -->
+        <div class="info-badges">
+            <div class="info-badge">
+                <i class="fa-solid fa-star"></i>
+                <span>4.9</span>
+            </div>
+            <div class="info-badge">
+                <i class="fa-regular fa-clock"></i>
+                <span>2-3 Hrs</span>
+            </div>
+            <div class="info-badge">
+                <i class="fa-solid fa-sun"></i>
+                <span>Best Time</span>
+            </div>
+            <div class="info-badge">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span>Nov - Mar</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Description & Activities -->
+    <section class="description-section">
+        <div class="description-content">
+            <div class="description-text">
+                <h2>Description</h2>
+                <p>Step into history at the iconic Pyramids of Giza, where ancient wonders meet breathtaking desert views. Explore one of the world's greatest landmarks and experience Egypt like never before.</p>
+                <p>The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza pyramid complex. It is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact.</p>
+                
+                <div class="activities-list">
+                    <h3>Activities:</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-check"></i> Explore the pyramids</li>
+                        <li><i class="fa-solid fa-check"></i> Visit the Sphinx</li>
+                        <li><i class="fa-solid fa-check"></i> Camel riding experience</li>
+                        <li><i class="fa-solid fa-check"></i> Sound & Light Show</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="share-btn">
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+
+        <!-- Tags -->
+        <div class="place-tags">
+            <span class="place-tag active">Historical</span>
+            <span class="place-tag">Culture</span>
+            <span class="place-tag">Outdoor</span>
+            <span class="place-tag">Landmarks</span>
+        </div>
+    </section>
+
+    <!-- Booking Section -->
+    <section class="booking-section">
+        <div class="booking-container">
+            <!-- Ticket Selection -->
+            <div class="ticket-panel">
+                <h2>Are You?</h2>
+                
+                <div class="visitor-type">
+                    <label class="radio-option">
+                        <input type="radio" name="visitor" value="egyptian" checked>
+                        <span class="radio-custom"></span>
+                        Egyptian
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="visitor" value="foreigner">
+                        <span class="radio-custom"></span>
+                        Foreigner
+                    </label>
+                </div>
+
+
+
+                <div class="ticket-types" id="ticket-types">
+                    <div class="ticket-row">
+                        <div class="ticket-info">
+                            <span class="ticket-label">Adults</span>
+                            <span class="ticket-price" data-egy="2" data-for="10">$2</span>
+                        </div>
+                        <div class="ticket-counter">
+                            <button class="counter-btn minus" onclick="updateCounter(this, -1)"><i class="fa-solid fa-minus"></i></button>
+                            <span class="counter-value">0</span>
+                            <button class="counter-btn plus" onclick="updateCounter(this, 1)"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="ticket-row">
+                        <div class="ticket-info">
+                            <span class="ticket-label">Children</span>
+                            <span class="ticket-price" data-egy="1" data-for="5">$1</span>
+                        </div>
+                        <div class="ticket-counter">
+                            <button class="counter-btn minus" onclick="updateCounter(this, -1)"><i class="fa-solid fa-minus"></i></button>
+                            <span class="counter-value">0</span>
+                            <button class="counter-btn plus" onclick="updateCounter(this, 1)"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="ticket-row">
+                        <div class="ticket-info">
+                            <span class="ticket-label">Student</span>
+                            <span class="ticket-price" data-egy="1.5" data-for="5">$1.5</span>
+                        </div>
+                        <div class="ticket-counter">
+                            <button class="counter-btn minus" onclick="updateCounter(this, -1)"><i class="fa-solid fa-minus"></i></button>
+                            <span class="counter-value">0</span>
+                            <button class="counter-btn plus" onclick="updateCounter(this, 1)"><i class="fa-solid fa-plus"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="price-note">*Price May Vary Based On Selected Options</p>
+
+                <!-- Total -->
+                <div class="total-section" id="total-section">
+                    <h3>Total Amount</h3>
+                    <div class="total-breakdown" id="total-breakdown">
+                        <p class="total-empty">No tickets selected</p>
+                    </div>
+                    <div class="total-line">
+                        <strong>Total:</strong>
+                        <strong id="total-price">$0</strong>
+                    </div>
+                    <button class="btn-primary book-now-btn" id="book-now-btn">Book Now</button>
+                </div>
+            </div>
+
+            <!-- Calendar -->
+            <div class="calendar-panel">
+                <h2>Select Date</h2>
+                <div class="calendar" id="calendar">
+                    <div class="calendar-header">
+                        <button class="cal-nav" id="cal-prev"><i class="fa-solid fa-chevron-left"></i></button>
+                        <h3 id="cal-month-year">April 2026</h3>
+                        <button class="cal-nav" id="cal-next"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <div class="calendar-weekdays">
+                        <span>Su</span><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span>
+                    </div>
+                    <div class="calendar-days" id="cal-days">
+                        <!-- Populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="map-section">
+        <div class="map-header">
+            <h2><i class="fa-solid fa-location-dot"></i> Giza Plateau, Cairo</h2>
+            <a href="https://maps.google.com/?q=Pyramids+of+Giza" target="_blank" class="view-map-link">view on maps <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </div>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.3258945831787!2d31.128833315115!3d29.97942298190456!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584587ac8f291b%3A0x810c2f3fa2a52424!2sThe%20Great%20Pyramid%20of%20Giza!5e0!3m2!1sen!2seg!4v1600000000000!5m2!1sen!2seg" 
+                width="100%" 
+                height="400" 
+                style="border:0; border-radius: 15px;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        <div class="map-info-row">
+            <div class="map-info-item">
+                <h4>Best Time</h4>
+                <p>Morning / Sunset</p>
+            </div>
+            <div class="map-info-item">
+                <h4>Location</h4>
+                <p>Giza Plateau</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="fa-solid fa-sun logo-icon"></i>
+                    <span>GAWLA</span>
+                </div>
+                <p>Explore Egypt In A Smarter And Easier Way. Discover Places, Book Trips, And Enjoy Your Journey.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Home</h4>
+                    <a href="#">Packages</a>
+                    <a href="#">Hidden Gems</a>
+                    <a href="#">Others</a>
+                </div>
+                <div class="link-group">
+                    <h4>About Us</h4>
+                    <a href="#">Contact</a>
+                    <a href="#">FAQs</a>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>info@cairotourism.eg</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <p class="follow-label">Follow Us</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Cairo. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot FAB -->
+    <div class="chatbot-fab" id="chatbot-fab">
+        <i class="fa-solid fa-robot"></i>
+    </div>
+
+    <!-- Chatbot Popup -->
+    <div class="chatbot-popup" id="chatbot-popup">
+        <div class="chat-header">
+            <i class="fa-solid fa-robot" style="font-size: 1.5rem;"></i>
+            <div class="bot-info">
+                <h4>Cairo AI</h4>
+                <span>Online</span>
+            </div>
+            <div class="chat-close" id="chat-close">
+                <i class="fa-solid fa-times"></i>
+            </div>
+        </div>
+        <div class="chat-messages" id="chat-messages">
+            <div class="message bot rtl">
+                <p>أهلاً بك! 👋 أنا روبوت القاهرة الذكي. يمكنني اقتراح أماكن رائعة للزيارة اليوم، أو إنشاء صور مميزة لك. فقط اسألني!</p>
+            </div>
+            <div class="message bot">
+                <p>Hello! 👋 I'm Cairo AI. I can suggest great places to visit today, or generate unique images for you. Just ask me!</p>
+            </div>
+        </div>
+        <div class="typing" id="typing-indicator">Cairo AI is thinking...</div>
+        <div class="chat-input-area">
+            <button class="mic-btn" id="mic-btn">
+                <i class="fa-solid fa-microphone"></i>
+            </button>
+            <input type="text" id="chat-input" placeholder="Ask for an image...">
+            <button class="send-btn" id="send-btn">
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+        </div>
+    </div>
+
+    <script src="place-detail.js"></script>
+    <script src="chatbot.js"></script>
+</body>
+</html>
